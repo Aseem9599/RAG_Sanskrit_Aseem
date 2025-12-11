@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit RAG Query System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cambria:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <div class="container">
+        <!-- Decorative top ornament -->
+        <div class="ornament ornament-top">❋</div>
+        
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">Sanskrit RAG Query System</h1>
+            <p class="subtitle">Retrieve Knowledge from Ancient Wisdom</p>
+        </header>
+        
+        <!-- Decorative divider -->
+        <div class="divider"></div>
+        
+        <!-- Query Section -->
+        <section class="query-section">
+            <div class="input-container">
+                <label for="query-input" class="input-label">Enter Your Query</label>
+                <input 
+                    type="text" 
+                    id="query-input" 
+                    class="query-input" 
+                    placeholder="Ask query..."
+                    autocomplete="off"
+                >
+                <button id="submit-btn" class="submit-btn">
+                    <span class="btn-text">Ask</span>
+                    <span class="btn-ornament">✦</span>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Decorative divider -->
+        <div class="divider"></div>
+        
+        <!-- Output Section -->
+        <section class="output-section">
+            <div class="scroll-container">
+                <div class="scroll-header">
+                    <span class="ornament-inline">❖</span>
+                    <span class="scroll-title">Answer</span>
+                    <span class="ornament-inline">❖</span>
+                </div>
+                <div id="output-area" class="scroll-content">
+                    <p class="placeholder-text">Your answer will appear here...</p>
+                </div>
+                <div class="scroll-footer">
+                    <span class="ornament-inline">✧</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Status indicator -->
+        <div id="status-indicator" class="status-indicator"></div>
+        
+        <!-- Decorative bottom ornament -->
+        <div class="ornament ornament-bottom">❋</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
